@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+nav {
+    position: fixed;
+    top: 10px; /* Se baja un poco desde el borde superior */
+    left: 50%; /* Comienza desde el centro horizontal */
+    transform: translateX(-50%); /* Centra el nav horizontalmente */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center;
+    background-color: #000020;
+    box-shadow: 0 0 10px 5px rgba(0, 183, 255, 0.2);
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 50px; /* Bordes redondeados */
+    z-index: 1000; /* Asegura que la barra de navegación esté siempre encima del contenido */
+    max-width: 70%; /* Ajusta el ancho máximo para que no ocupe todo el espacio */
+}
+
+/* Ajustes para la lista dentro de la barra de navegación */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 1rem; /* Tamaño base de la fuente */
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Transición suave para escala y colores */
+    padding: 0.5rem 1rem; /* Espaciado dentro de cada enlace para evitar desplazamiento */
+    display: inline-block; /* Hace que el padding también afecte el área de clic */
+}
+
+nav ul li a:hover {
+    background-color: #07396b; /* Color de fondo al pasar el cursor */
+    color: #ffff; /* Color de la fuente al pasar el cursor */
+    transform: scale(1.1); /* Escala al pasar el cursor */
+    box-shadow: 0 0 10px 5px rgba(0, 183, 255, 0.6);
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('assets/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+    height: 80vh;
+    background-attachment: fixed; /* Fondo fijo para efecto parallax */
+    transition: transform 0.5s ease-out; /* Suaviza la animación */
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-align: left;
+}
+
+.developer-photo {
+    box-shadow: 0 0 10px 5px rgba(180, 185, 187, 0.788);;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+/* Cardholder Section Styles */
+.cardholder {
+    background-color: #7f7da1;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.card {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h2 {
+    margin: 0.5rem 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
